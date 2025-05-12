@@ -6,13 +6,14 @@
     <title>Emanuel Lázaro - Software Developer</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="particles-js"></div>
+    
     <header>
         <nav class="navbar">
             <div class="container">
@@ -35,18 +36,26 @@
 
     <section id="hero" class="hero">
         <div class="container">
-            <div>
-                <h1 class="hero-title">Hi! I'm <span class="text-primary"><br>Emanuel Lázaro</span>.</h1>
+            <div class="hero-content">
+                <h1 class="hero-title">Hi! I'm <span class="text-primary">Emanuel Lázaro</span>.</h1>
                 <p class="hero-subtitle">A passionate <span class="typing-effect"></span></p>
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="https://github.com/sponsors/emanuellcs" class="btn" target="_blank">Support Me</a>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://github.com/sponsors/emanuellcs" class="btn btn-secondary" target="_blank">Support Me</a>
+                </div>
                 <div class="social-icons">
                     <a href="https://github.com/emanuellcs" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/emanuel-l%C3%A1zaro-cust%C3%B3dio-silva-a20137351" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/emanuel-lázaro-custódio-silva-2a8130362" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://huggingface.co/emanuellcs" aria-label="Hugging Face" target="_blank"><i class="fa-regular fa-face-smile"></i></a>
+                    <a href="https://x.com/emanuellcs01" aria-label="X (Twitter)" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
             <div class="hero-image">
-                <a href="https://github.com/emanuellcs" target="_blank"><img src="assets/profile.png" alt="My GitHub Profile"></a>
+                <a href="https://github.com/emanuellcs" target="_blank">
+                    <div class="profile-hex">
+                        <img src="assets/profile.png" alt="My GitHub Profile">
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -59,11 +68,24 @@
                     <img src="assets/code.png" alt="About Me">
                 </div>
                 <div class="about-text">
-                    <p>I'm a full-stack developer and Software Engineering student with a passion for creating innovative, user-friendly digital solutions. My experience spans both frontend and backend technologies, enabling me to build comprehensive applications that address complex challenges.</p>
+                    <p>I'm a full stack developer and Software Engineering student with a passion for creating innovative, user-friendly digital solutions. My experience spans both frontend and backend technologies, enabling me to build comprehensive applications that address complex challenges.</p>
                     <p>My mission is to craft meaningful digital experiences that have a positive impact, and I'm always on the lookout for opportunities to learn, grow, and collaborate on exciting projects.</p>
                     <p>Beyond coding, I enjoy cycling and listening to music, which help me maintain a healthy work-life balance. My curiosity in technology goes beyond web development to include areas such as artificial intelligence, machine learning, and computer vision—fields in which I continuously seek to expand my knowledge.</p>
-                    <p>I'm proficient in a variety of programming languages and frameworks, including Python, JavaScript, and Java. I have a strong interest in cloud computing architectures and have worked extensively with containerization technologies like Docker and orchestration platforms such as Kubernetes. Effective version control with Git and streamlined CI/CD pipelines are integral parts of my development workflow.</p>
-                    <p>My commitment to writing clean, maintainable code is reinforced by a solid understanding of software design patterns and architectural principles—an expertise I further develop through my studies. I also appreciate the importance of automated testing and thorough documentation in ensuring code quality and sustainability. Additionally, I'm enthusiastic about emerging technologies like edge computing, blockchain, and quantum computing, and their potential to transform the future of software development.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Computing</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,159 +96,183 @@
             <h2 class="section-title">My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="assets/saberlink.png" alt="SaberLink">
-                    <h3>SaberLink</h3>
-                    <p>Free educational resources for ENEM and university entrance exams.</p>
-                    <div class="project-links">
-                        <a href="https://projetosocialds3.github.io/SaberLink/" class="btn btn-secondary" target="_blank">Live Demo</a>
-                        <a href="https://github.com/ProjetoSocialDS3/SaberLink" class="btn btn-secondary" target="_blank">GitHub</a>
+                    <div class="project-img">
+                        <img src="assets/saberlink.png" alt="SaberLink">
+                    </div>
+                    <div class="project-info">
+                        <h3>SaberLink</h3>
+                        <p>Free educational resources for ENEM and university entrance exams.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://projetosocialds3.github.io/SaberLink/" class="btn btn-secondary" target="_blank">Live Demo</a>
+                            <a href="https://github.com/ProjetoSocialDS3/SaberLink" class="btn btn-secondary" target="_blank">GitHub</a>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <img src="assets/pyn.png" alt="Pyn">
-                    <h3>Pyn</h3>
-                    <p>A Python-based tool for password analysis and generation, featuring strength evaluation and compromised password detection.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/emanuellcs/pyn" class="btn btn-secondary" target="_blank">GitHub</a>
+                    <div class="project-img">
+                        <img src="assets/pyn.png" alt="Pyn">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pyn</h3>
+                        <p>A Python-based tool for password analysis and generation, featuring strength evaluation and compromised password detection.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/emanuellcs/pyn" class="btn btn-secondary" target="_blank">GitHub</a>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <img src="assets/portfolio.png" alt="Emanuel Lázaro's Portfolio">
-                    <h3>Emanuel Lázaro's Portfolio</h3>
-                    <p>This page is like my little storefront, where I get to show off all the amazing things I can do and the projects I've been working on.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-secondary">Live Demo</a>
-                        <a href="https://github.com/emanuellcs/emanuellazaro" class="btn btn-secondary" target="_blank">GitHub</a>
+                    <div class="project-img">
+                        <img src="assets/autodocs.png" alt="Emanuel Lázaro's Portfolio">
+                    </div>
+                    <div class="project-info">
+                        <h3>AutoDocs</h3>
+                        <p>An intelligent assistant for automatically generating and enhancing README.md files for GitHub repositories.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Gemini API</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://huggingface.co/spaces/emanuellcs/AutoDocs" class="btn btn-secondary">Live Demo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h4 style="text-align: center;">And more soon!</h4>
+            <div class="more-projects">
+                <h4>And more projects coming soon!</h4>
+                <a href="https://github.com/emanuellcs" class="btn btn-primary" target="_blank">See All on GitHub</a>
+            </div>
         </div>
     </section>
 
     <section class="skills" id="skills">
         <div class="container">
             <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML5</p>
+            
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-k"></i>
+                            <p>Kotlin</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-copyright"></i>
+                            <p>C</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS3</p>
+                
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <p>React</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <p>Angular</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-vuejs"></i>
+                            <p>Vue.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <p>Svelte</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node"></i>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <p>Express.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <p>Django</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-laravel"></i>
+                            <p>Laravel</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="fab fa-js-square"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-code"></i>
-                    <p>TypeScript</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-python"></i>
-                    <p>Python</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-java"></i>
-                    <p>Java</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-k"></i>
-                    <p>Kotlin</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-copyright"></i>
-                    <p>C</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-code"></i>
-                    <p>C++</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-windows"></i>
-                    <p>C#</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-cog"></i>
-                    <p>Rust</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-moon"></i>
-                    <p>Lua</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-r-project"></i>
-                    <p>R</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-swift"></i>
-                    <p>Swift</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-react"></i>
-                    <p>React</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-angular"></i>
-                    <p>Angular</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-vuejs"></i>
-                    <p>Vue.js</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-fire"></i>
-                    <p>Svelte</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-node"></i>
-                    <p>Node.js</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-server"></i>
-                    <p>Express.js</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-python"></i>
-                    <p>Django</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-laravel"></i>
-                    <p>Laravel</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-brain"></i>
-                    <p>TensorFlow</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-fire-alt"></i>
-                    <p>PyTorch</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-table"></i>
-                    <p>Pandas</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-cogs"></i>
-                    <p>Scikit-learn</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-git-alt"></i>
-                    <p>Git</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-docker"></i>
-                    <p>Docker</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-aws"></i>
-                    <p>AWS</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <p>MySQL</p>
+                
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <p>Docker</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <p>AWS</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <p>TensorFlow</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire-alt"></i>
+                            <p>PyTorch</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-table"></i>
+                            <p>Pandas</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <p>Scikit-learn</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -235,18 +281,38 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
-            <p class="contact-description" style="text-align: center; color: #ccc; margin-bottom: 2rem;">
+            <p class="contact-description">
                 I'm always eager to connect! Whether you have a project idea, want to discuss technology, 
                 share feedback, or just chat about innovation and coding, I'm all ears. Feel free to reach 
                 out – collaboration and learning are what drive me forward.
             </p>
+            
             <div class="contact-content">
                 <div class="contact-method">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
                     <p>emanuellzr01@outlook.com</p>
-                    <a href="mailto:emanuellzr01@outlook.com" class="btn btn-secondary">
+                    <br>
+                    <a href="mailto:emanuellzr01@outlook.com" class="btn btn-primary">
                         Send Email
+                    </a>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Check out my open source projects</p>
+                    <a href="https://github.com/emanuellcs" class="btn btn-primary" target="_blank">
+                        Visit GitHub
+                    </a>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally</p>
+                    <a href="https://www.linkedin.com/in/emanuel-l%C3%A1zaro-cust%C3%B3dio-silva-a20137351" class="btn btn-primary" target="_blank">
+                        View Profile
                     </a>
                 </div>
             </div>
@@ -255,14 +321,23 @@
 
     <footer>
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/emanuellcs" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/emanuel-l%C3%A1zaro-cust%C3%B3dio-silva-a20137351" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
             <p>© 2025 Emanuel Lázaro. All rights reserved.</p>
         </div>
     </footer>
 
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
     <script src="assets/particles.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         particlesJS("particles-js", {
             "particles": {
@@ -287,19 +362,49 @@
         
         var typed = new Typed('.typing-effect', {
             strings: [
-                    "web developer.",
-                    "frontend enthusiast.",
-                    "problem solver.",
-                    "full-stack developer.",
-                    "AI advocate.",
-                    "innovative creator.",
-                    "logical thinker.",
-                    "skilled programmer.",
-                    "Linux user."
-                ],
+                "passionate web developer.",
+                "dedicated frontend enthusiast.",
+                "creative problem solver.",
+                "versatile full stack developer.",
+                "zealous AI advocate.",
+                "innovative creator.",
+                "analytical logical thinker.",
+                "proficient skilled programmer.",
+                "avid Linux user.",
+                "curious software engineering student.",
+                "driven code architect.",
+                "resourceful algorithm designer.",
+                "dynamic tech explorer.",
+                "committed open-source contributor.",
+                "meticulous debugger.",
+                "enthusiastic system optimizer.",
+                "collaborative team coder.",
+                "ambitious project builder.",
+                "detail-oriented interface crafter.",
+                "resilient bug hunter."
+            ],
             typeSpeed: 50,
             backSpeed: 25,
             loop: true
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTop = document.querySelector('.scroll-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollToTop.classList.add('active');
+                } else {
+                    scrollToTop.classList.remove('active');
+                }
+            });
+            
+            scrollToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
