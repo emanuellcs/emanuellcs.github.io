@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emanuellcs.github.io/sitemap.xml
+Host: https://emanuellcs.github.io/
