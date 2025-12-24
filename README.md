@@ -17,6 +17,7 @@ This repository provides a stripped-down, high-performance "Linktree-style" prof
 - `index.html`: The main entry point containing the structure and content.
 - `styles.css`: Handles the visual presentation, colors, and responsiveness.
 - `script.js`: Manages dynamic behavior (e.g., date updates, theme toggling).
+- `fonts/`: Directory containing optimized `.woff2` font files.
 - *(Optional)* `about.html` / `contact.html`: Templates for additional pages if needed.
 
 ## 🚀 Quick Start
