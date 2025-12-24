@@ -198,6 +198,50 @@ h3 {
     font-size: 1.5rem;
 }
 
+/* Ensure inline SVG icons inherit color and size like fonts */
+.social-icons a {
+    color: var(--text-color);
+}
+
+.social-icons svg {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+/* Hover / focus animations for accessibility and polish */
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 200ms ease, transform 200ms ease;
+}
+
+.social-icons a:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+    color: var(--accent-color);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.social-icons svg {
+    transition: transform 200ms ease, fill 200ms ease, opacity 200ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .social-icons a,
+    .social-icons svg {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
 .cta-container {
     margin-top: 40px;
 }
@@ -252,6 +296,49 @@ h3 {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+/* Size and color for contact-list SVG icons */
+.contact-list a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 200ms ease, transform 150ms ease;
+}
+
+.contact-list svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex: 0 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    transition: transform 200ms ease, fill 200ms ease, opacity 200ms ease;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+    color: var(--accent-color);
+    transform: translateX(4px);
+}
+
+.contact-list a:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+    .contact-list svg {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-list a,
+    .contact-list svg {
+        transition: none !important;
+        transform: none !important;
+    }
 }
 
 .footer {
