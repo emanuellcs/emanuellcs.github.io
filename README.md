@@ -1,6 +1,6 @@
 # Minimalist Business Card
 
-A clean, responsive, and lightweight personal website template designed to showcase a short bio, contact details, and portfolio links with minimal markup.
+A clean, responsive, and lightweight personal website template. While this repository hosts the personal business card for Emanuel Lázaro, it is structured as an open-source template for anyone wanting a simple "Linktree-style" profile.
 
 ## 📖 About
 
